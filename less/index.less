@@ -29,8 +29,17 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+
+
+
+
+
+
 body {
 	line-height: 1;
+	
+	
 	
 }
 ol, ul {
@@ -57,4 +66,82 @@ table {
 html, body {
     height: 100%;
 }
+
+ // Variables 
+
+@bc: #ffff;
+@background: #F2F3F4;
+@font-family: Georgia;
+@ff: Courier;
+@width: 100%;
+@backgroundg: #424949;
+
+// Variables Selectors
+
+	 .navigation {
+		font-family: @font-family;
+		display: flex;
+		flex-direction: row;
+		width: 20%;
+		justify-content: space-evenly;
+		padding: 1%;
+		padding-top: 1%;
+		margin-left: 77%;
+		background-color: @backgroundg;
+
+		
+		
+	}
+		a	{
+			color: @background;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: black;
+		}
+
+		@media (max-width: 500px){
+			.navigation {
+				width: 100%;
+				margin-left: 0%;
+				padding: 5%;
+			}
+		}
+		
+	 .container {
+		background-color: @background;
+		margin: 3%;
+		margin-top: 1%;
+		height: 52%;
+		border-radius: 5px;
+		
+	}
+
+		.main {
+			margin: 2%;
+			border: 1px solid black;
+			height: 20%;
+			font-size: 1rem;
+		}
+
+		.img {
+			width: 100%;
+			padding-top: 4%;
+		}
+	
+	
+	
+	p {
+		font-family: @ff;
+		}
+	
+	
+	h1, h2, h3 {
+			 
+			font-family: @font-family; 
+			}
+
+
+ 
 

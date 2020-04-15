@@ -134,3 +134,53 @@ html,
 body {
   height: 100%;
 }
+.navigation {
+  font-family: Georgia;
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  justify-content: space-evenly;
+  padding: 1%;
+  padding-top: 1%;
+  margin-left: 77%;
+  background-color: #424949;
+}
+a {
+  color: #F2F3F4;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+    margin-left: 0%;
+    padding: 5%;
+  }
+}
+.container {
+  background-color: #F2F3F4;
+  margin: 3%;
+  margin-top: 1%;
+  height: 52%;
+  border-radius: 5px;
+}
+.main {
+  margin: 2%;
+  border: 1px solid black;
+  height: 20%;
+  font-size: 1rem;
+}
+.img {
+  width: 100%;
+  padding-top: 4%;
+}
+p {
+  font-family: Courier;
+}
+h1,
+h2,
+h3 {
+  font-family: Georgia;
+}
