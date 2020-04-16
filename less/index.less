@@ -76,7 +76,13 @@ html, body {
 @width: 100%;
 @backgroundg: #424949;
 
-// Variables Selectors
+html {
+	font-size: 100%;
+}
+
+body {
+	margin: 2%;
+}
 
 	 .navigation {
 		font-family: @font-family;
@@ -104,36 +110,213 @@ html, body {
 		@media (max-width: 500px){
 			.navigation {
 				width: 100%;
-				margin-left: 0%;
+				margin-left: 1%;
 				padding: 5%;
 			}
 		}
 		
 	 .container {
 		background-color: @background;
-		margin: 3%;
+		margin: 40px 46px 29px 46px;
 		margin-top: 1%;
-		height: 52%;
+		height: 50%;
 		border-radius: 5px;
 		
 	}
 
 		.main {
 			margin: 2%;
-			border: 1px solid black;
 			height: 20%;
-			font-size: 1rem;
+			padding-bottom: 1%;
+			
 		}
 
 		.img {
 			width: 100%;
-			padding-top: 4%;
+			padding-top: 3%;
+		}
+
+		.name {
+			padding-bottom: 1%;
+			font-size: 4.5rem;
+			text-shadow: 2px;
+		}
+
+		.name h1 {
+			font-family: "Big Caslon";
+			
+		}
+		
+		.tech {
+			padding-top: 2px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid lightgrey;
+		}
+		.team {
+			padding-top: 30px;
+			width: 67%;
+			padding-bottom: 20px;
+		}
+		.btn {
+			padding: 20px;
+			background-color: @backgroundg;
+			color: white;
+			font-family: @font-family;
+			font-size: 1rem;
+			cursor: pointer;
+			border-radius: 20px;
+			
+		}
+		.btn:hover {
+			background-color: @background;
+			color: @backgroundg;
+		}
+
+		@media (max-width: 500px){
+			
+			.container {
+				height: 28%;
+			
+			}
+
+			.image1 {
+				display: none;
+			}
+			.name {
+				font-size: 2rem;
+			}
 		}
 	
+	.middle-section {
+		margin: 40px 46px 29px 46px;
+		margin-top: 3%;
+		height: 20%;
+		width: 94%;
+		}
+
+		.about-me {
+			display: flex;
+			justify-content: space-between;
+		}
+
+			.Hire-me {
+				width: 42%;
+				
+			}
+
+			.Hire-me h2 {
+				font-size: 1.9rem;
+				padding-bottom: 5%;
+			}
+			
+			.info h2 {
+				font-size: 1.9rem;
+				padding-bottom: 5%;
+			}
+
+			.info {
+				display: flex;
+				flex-direction: column;
+				margin-right: 0%;
+				width: 27%;
+				
+			}
+			
+			.info ul {
+				border: 2px solid lightgrey;
+				width: 106%;
+				box-shadow: 4px 5px #E5E8E8;
+			}
+
+			.info ul li {
+				border-bottom: 1px solid lightgrey;
+				width: 100%;
+				padding: 5%;
+
+			}
+
+			@media (max-width: 500px){
+				
+				.about-me {
+					display: flex;
+					flex-direction: column;
+				}
+				
+				.Hire-me {
+					width: 65%;
+				}
+
+				.info {
+					padding-top: 4%;
+					width: 70vw;
+				}
+
+				.history {
+					margin-top: 89%;
+				}
+
+
+			}
+
+	.bottom-section {
+		.middle-section()
+		
+	}
+
+		.history h2 {
+			font-size: 1.9rem;
+			padding-bottom: 2%;
+	}
+		.history {
+			width: 94%;
+		}
+
+
+		.tableHd {
+			width: @width;
+			background-color: @background;
+			border: 0.5px solid lightgrey;
+		}
+		
+		.tableHd th {
+			font-size: 1.3rem;
+			padding-bottom: 1%;
+			
+			padding-top: 1%;
+		}
+		
+		.tableHd td {
+			
+			padding: 1%;
+			text-align: center;
+		}
+
+		.apple {
+			background-color: #ffff;
+		}
+
+		.amazon {
+			.apple()
+		}
+	.foot {
+		margin-top: 7%;
+		text-align: center;
+		padding-bottom: 2%;
+		background: @background;
+		color:@backgroundg;
+		width: 96%;
+		margin-left: 2%;
+	}
+
+	.foot p {
+		padding-top: 2%;
+	}
 	
-	
+		
+		
 	p {
-		font-family: @ff;
+		font-family: 'Playfair Display', serif;
+		line-height: 1.5;
 		}
 	
 	
