@@ -1,1 +1,332 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 100%;
+}
+body {
+  margin: 2%;
+}
+.navigation {
+  font-family: Georgia;
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  justify-content: space-evenly;
+  padding: 1%;
+  padding-top: 1%;
+  margin-left: 77%;
+  background-color: #424949;
+}
+a {
+  color: #F2F3F4;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+    margin-left: 1%;
+    padding: 5%;
+  }
+}
+.container {
+  background-color: #F2F3F4;
+  margin: 40px 46px 29px 46px;
+  margin-top: 1%;
+  height: 50%;
+  border-radius: 5px;
+}
+.main {
+  margin: 2%;
+  height: 20%;
+  padding-bottom: 1%;
+}
+.img {
+  width: 100%;
+  padding-top: 3%;
+}
+.name {
+  padding-bottom: 1%;
+  font-size: 4.5rem;
+  text-shadow: 2px;
+}
+.name h1 {
+  font-family: "Big Caslon";
+}
+.tech {
+  padding-top: 2px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+.team {
+  padding-top: 30px;
+  width: 67%;
+  padding-bottom: 20px;
+}
+.btn {
+  padding: 20px;
+  background-color: #424949;
+  color: white;
+  font-family: Georgia;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.btn:hover {
+  background-color: #F2F3F4;
+  color: #424949;
+}
+@media (max-width: 500px) {
+  .container {
+    height: 28%;
+  }
+  .image1 {
+    display: none;
+  }
+  .name {
+    font-size: 2rem;
+  }
+}
+.middle-section {
+  margin: 40px 46px 29px 46px;
+  margin-top: 3%;
+  height: 20%;
+  width: 94%;
+}
+.about-me {
+  display: flex;
+  justify-content: space-between;
+}
+.Hire-me {
+  width: 42%;
+}
+.Hire-me h2 {
+  font-size: 1.9rem;
+  padding-bottom: 5%;
+}
+.info h2 {
+  font-size: 1.9rem;
+  padding-bottom: 5%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0%;
+  width: 27%;
+}
+.info ul {
+  border: 2px solid lightgrey;
+  width: 106%;
+  box-shadow: 4px 5px #E5E8E8;
+}
+.info ul li {
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+  .Hire-me {
+    width: 65%;
+  }
+  .info {
+    padding-top: 4%;
+    width: 70vw;
+  }
+  .history {
+    margin-top: 89%;
+  }
+}
+.bottom-section {
+  margin: 40px 46px 29px 46px;
+  margin-top: 3%;
+  height: 20%;
+  width: 94%;
+}
+.history h2 {
+  font-size: 1.9rem;
+  padding-bottom: 2%;
+}
+.history {
+  width: 94%;
+}
+.tableHd {
+  width: 100%;
+  background-color: #F2F3F4;
+  border: 0.5px solid lightgrey;
+}
+.tableHd th {
+  font-size: 1.3rem;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.tableHd td {
+  padding: 1%;
+  text-align: center;
+}
+.apple {
+  background-color: #ffff;
+}
+.amazon {
+  background-color: #ffff;
+}
+.foot {
+  margin-top: 7%;
+  text-align: center;
+  padding-bottom: 2%;
+  background: #F2F3F4;
+  color: #424949;
+  width: 96%;
+  margin-left: 2%;
+}
+.foot p {
+  padding-top: 2%;
+}
+p {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  font-family: Georgia;
+}
